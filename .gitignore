@@ -1,1 +1,5 @@
 Backdoor Project.opensdf
+backdoor_controller/Debug/
+backdoor_controller/Release/
+backdoor_server/Debug/
+backdoor_server/Release/
