@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "backdoor_controller", "backdoor_controller\backdoor_controller.vcxproj", "{ED5E6920-FA03-4DAC-8551-A762A0AE5DB7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "backdoor_server", "backdoor_server\backdoor_server.vcxproj", "{1716D2B7-03E6-40C7-BCBA-D03DB06E6ACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1A57AB9-0C87-40B0-BA56-85428E199773}"
+	ProjectSection(SolutionItems) = preProject
+		my-readme.txt = my-readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED5E6920-FA03-4DAC-8551-A762A0AE5DB7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED5E6920-FA03-4DAC-8551-A762A0AE5DB7}.Debug|Win32.Build.0 = Debug|Win32
+		{ED5E6920-FA03-4DAC-8551-A762A0AE5DB7}.Release|Win32.ActiveCfg = Release|Win32
+		{ED5E6920-FA03-4DAC-8551-A762A0AE5DB7}.Release|Win32.Build.0 = Release|Win32
+		{1716D2B7-03E6-40C7-BCBA-D03DB06E6ACB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1716D2B7-03E6-40C7-BCBA-D03DB06E6ACB}.Debug|Win32.Build.0 = Debug|Win32
+		{1716D2B7-03E6-40C7-BCBA-D03DB06E6ACB}.Release|Win32.ActiveCfg = Release|Win32
+		{1716D2B7-03E6-40C7-BCBA-D03DB06E6ACB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

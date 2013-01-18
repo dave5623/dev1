@@ -1,0 +1,51 @@
+#ifndef _BACKDOOR_PROTOCOL_H		
+#define _BACKDOOR_PROTOCOL_H	
+
+#include <Windows.h>
+
+
+#define BACKDOOR_MAGIC_NUMBER  0xBACCD004   // 32-bit number
+#define FILE_SIZE_BLOCK 512  
+
+
+typedef enum _BACKDOOR_MSG
+{
+  BKDOOR_HEARTBEAT = 101, 
+  BKDOOR_PUT_FILE,
+  BKDOOR_GET_FILE,
+  BKDOOR_GET_PROCESS_LIST,
+  BKDOOR_KILL_PROCESS,
+  BKDOOR_EXECUTE_PROCESS,
+  BKDOOR_ACK,
+  BKDOOR_NAK
+
+} BACKDOOR_MSG;
+
+typedef struct _HEARTBEAT_INFO
+{
+	DWORD magicNum;
+	BACKDOOR_MSG msg;
+} HEARTBEAT_INFO;
+
+typedef struct _BKDOOR_PROCESS_REQ 
+{ 
+  DWORD magicNum;
+  BACKDOOR_MSG cmd;
+  
+  DWORD th32ProcessID;  
+
+  WCHAR szExeFile[MAX_PATH]; 
+
+} BKDOOR_PROCESS_REQ;
+
+typedef struct _BKDOOR_PROCESS_INFO 
+{ 
+  DWORD th32ProcessID;  
+
+  WCHAR szExeFile[MAX_PATH]; 
+
+} BKDOOR_PROCESS_INFO;
+
+
+
+#endif // _BACKDOOR_PROTOCOL_H	
