@@ -14,3 +14,6 @@ On the target machine, install the Visual Studio 2012 Runtime. Found at http://w
 
 If when you run, it complains about not being able to find MSVCR110D.dll, it is trying to find the debug variant of the dll.
 Try rebuilding it with the release target. This assume the target has installed the MS Visual C++ 2012 Redistributable.
+
+Other Notes:
+If you get, "error C2061: syntax error : identifier '_TCHAR'", then tchar.h must not be in your External Dependencies. Either add it there or just add "#include <tchar.h>" to the top of your file
